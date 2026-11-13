@@ -1,0 +1,39 @@
+package-lock.json
+yarn.lock
+packages/
+.superpowers/
+docs/superpowers/
+.git*
+
+# Сборка и зависимости
+node_modules
+.next
+out
+build
+dist
+
+# Статика и кэш
+public
+*.svg
+.pnpm-home
+.pnpm-store
+.npmrc
+*.tsbuildinfo
+
+# Логи и отчеты
+coverage
+*.log
+.npm
+
+# Конфиги и инфраструктура (обычно их не форматируют так же, как код)
+Dockerfile*
+pnpm-lock.yaml
+.dockerignore
+.gitignore
+.cursor
+
+# Секреты
+.env*
+
+.prettierignore
+.github/

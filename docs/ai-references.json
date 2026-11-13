@@ -1,0 +1,12 @@
+{
+  "purpose": "Источники прототипа swing-configurator (распашные двери). Общий порядок работы — в ai-playbook (transom-configurator/docs/ai-playbook).",
+  "references": [
+    { "project": "transom-configurator", "role": "skeleton", "files": ["configs", "src/shared", "src/app", "widgets/estimate-panel", "widgets/transom-drawings", "features/project-file"], "takeaways": "Скелет, dockview-раскладка, смета TreeTable, чертежи cad-blueprint, файл проекта" },
+    { "project": "configdoor (легаси)", "role": "legacy-logic", "files": [
+      "public/src/js/calc/size.js", "public/src/js/calc/frame.js", "public/src/js/calc/door.js", "public/src/js/calc/handle.js",
+      "public/src/js/calc/decoration.js", "public/src/js/calc/calcCommon.js", "public/src/js/store/Estimate.js", "public/src/js/store/List.ts", "public/public.php"
+    ], "takeaways": "Порядок загрузки config/price и колонки — как в public.php; поиск getByParam/getFilter — как в List.ts; округления — как в Estimate.js" },
+    { "project": "configdoor (легаси)", "role": "data", "files": ["public/config/c_*.csv", "public/price/p_*.csv"], "takeaways": "Конвертируются tools/door-importer; секреты из scripts/ и README серверов не копировать" },
+    { "project": "Configdoor.pdf", "role": "golden-data", "files": ["скриншот спецификации 900×2060"], "takeaways": "calculation/swing/__fixtures__/legacy-screenshot.ts" }
+  ]
+}
